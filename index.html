@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Club Pizza</title>
+    <meta name="author" content="Tatiana Huertas">
+    <meta name="description" 
+        content="
+            This is a 'useless' website where the user is pointlessly requested to cut a slice of pizza 
+            but will never be able to because the pizza will move each time the user tries to slice it 
+            (when the mouse hovers over the pizza)
+
+            Additionally the user will be bothered with desperate messages (header) because is taking too 
+            long to slice the pizza and when the message stops changing the text will start beating"
+    >
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,useless web, HTML5,CSS3">
+    <link rel="icon" type="image/x-icon" href="img/pizza.png"/> <!--Icon made by Freepik from https://www.flaticon.com/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--JQuery CDN taken from https://www.w3schools.com/jquery/jquery_get_started.asp -->
+    <script src="js/JScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC%7CFrijole&display=swap" rel="stylesheet"><!--Google Fonts-->
+</head>
+<body onload="setInterval(textColor,3000); changeText(); setTimeout(heartBeat,99000)">
+    <header>
+        <h1 id="colorChanging">Try to slice the pizza</h1>
+    </header>
+    <div class="movingPizza">
+        <img src="img/big-pizza.png" alt="Pizza missing one slice"><!--Logo made by Freepik from https://www.flaticon.com/ -->
+    </div>
+</body>
+</html>

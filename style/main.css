@@ -1,0 +1,132 @@
+/*------------ FONTS ------------*/
+body {font-family: 'Frijole', 'Bowlby One SC', cursive;;}
+
+/*------------ BODY ------------*/
+/* Background */
+body{
+    margin: 0;
+    background: #FFFFFF;
+    background-image: url('../img/slices.png'), url('../img/slices3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+}
+
+/*To change the mouse in the website: */
+body {
+    cursor: url("../img/pizza-cutter2.png"), auto;/*Icon made by Smashicons from https://www.flaticon.com/ */
+}
+
+.movingPizza{
+    position:absolute;
+}
+
+.movingPizza img {
+    width: 200px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+/*------------ ANIMATIONS ------------*/
+/*This animation is only for the background of the body and for all browsers*/
+body {
+    animation: pizza-snow 1000s linear infinite;
+    -moz-animation: pizza-snow 1000s linear infinite;
+    -webkit-animation: pizza-snow 1000s linear infinite;
+    -ms-animation: pizza-snow 1000s linear infinite;
+    transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+}
+
+/*Initially, the pulse class is not assigned to any element but it is later added with JS
+    is intended to show a heartbeat effect
+*/
+.pulse {
+    animation: pulse 5s ease infinite;
+    -moz-animation: pulse 5s ease infinite;
+    -webkit-animation: pulse 5s ease infinite;
+    -ms-animation: pulse 5s ease infinite;
+}
+
+/*------------ KEYFRAMES ------------*/
+/*Pizza Snow for all browsers*/
+@keyframes pizza-snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-moz-keyframes pizza-snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-webkit-keyframes pizza-snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-ms-keyframes pizza-snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+/*Pulse for all Browsers*/
+@keyframes pulse {
+    0% {transform:scale(1);}
+    5% {transform:scale(1.25);}
+    20% {transform:scale(1);}
+    30% {transform:scale(1);}
+    35% {transform:scale(1.25);}
+    50% {transform:scale(1);}
+    55% {transform:scale(1.25);}
+    70% {transform:scale(1);}
+}
+
+@-moz-keyframes pulse {
+    0% {transform:scale(1);}
+    5% {transform:scale(1.25);}
+    20% {transform:scale(1);}
+    30% {transform:scale(1);}
+    35% {transform:scale(1.25);}
+    50% {transform:scale(1);}
+    55% {transform:scale(1.25);}
+    70% {transform:scale(1);}
+}
+
+@-webkit-keyframes pulse {
+    0% {transform:scale(1);}
+    5% {transform:scale(1.25);}
+    20% {transform:scale(1);}
+    30% {transform:scale(1);}
+    35% {transform:scale(1.25);}
+    50% {transform:scale(1);}
+    55% {transform:scale(1.25);}
+    70% {transform:scale(1);}
+}
+
+@-ms-keyframes pulse {
+    0% {transform:scale(1);}
+    5% {transform:scale(1.25);}
+    20% {transform:scale(1);}
+    30% {transform:scale(1);}
+    35% {transform:scale(1.25);}
+    50% {transform:scale(1);}
+    55% {transform:scale(1.25);}
+    70% {transform:scale(1);}
+}
