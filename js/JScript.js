@@ -63,15 +63,3 @@ $(document).ready(function () {
         return Math.floor(Math.random() * (max - min + 1)) + min;//Found info about Math.random() here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
     }
 });
-
-//This is another way to change the text without using a for. Instead the setInterval is required
-//var counter = 0;
-//function changeText() {
-//    document.getElementById("colorChanging").innerHTML = sentences[counter];
-//    counter++;
-//    if (counter == sentences.length) {
-//        counter = 0;
-//    }
-//}
-
-
